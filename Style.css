@@ -1,0 +1,309 @@
+:root {
+    --Primary-Text-Color: white;
+    --Secondary-Text-Colour: #FBD784;
+    --Background-Colour: #0B1D26;
+    --Hover-Text-Colour: rgb(191, 190, 190);
+    --Hover-Secondary-Text-Colour: #c3aa6f;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* color: var(--Primary-Text-Color) */
+}
+
+
+/* --------------- Nav-Bar - Section ----------------- */
+.Nav-Container {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 220px;
+}
+
+.Search-And-LoginButton_Container {
+    display: flex;
+}
+
+.Delivey-Address_P-Tag {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.Delivey-Address_Span {
+    font-weight: 400;
+}
+
+
+/* ------ Title-And_Order-Card - Section ------------- */
+.Title-And_Order-Card_Background-Image {
+    background-image: url(./Assets/Group\ 1\ 1.png);
+    height: auto;
+}
+
+.Title-And_Order-Card_Container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+
+.Food-Image img {
+    height: auto;
+    width: 21vw;
+}
+
+.Order-Card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Title-H1-Tag {
+    font-size: 60px;
+    color: white;
+}
+
+.Order-Card-Top {
+    margin-bottom: 10px;
+}
+
+.Order-Card-Bottom {
+    margin-top: 10px;
+}
+
+.Delivery-Button {
+    color: #F17228;
+    background-color: #F172281A;
+    font-weight: 700;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+}
+
+.Picup-Button {
+    color: #757575;
+    border: none;
+    padding: 10px 24px;
+    background-color: white;
+    font-weight: 700;
+}
+
+.Order-Card-Bottom button {
+    background: linear-gradient(to bottom, #FF7A7A, #F65900);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.Order-Card-Bottom input {
+    padding: 10px 100px; 
+    border: none;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+
+
+/* -------- Flash_Deals-Card - Section --------------- */
+.Flash_Deals-Card_Container {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+
+.Flash_Deals-Card_Box-Image img {
+    height: auto;
+    width: 15vw;
+    border-radius: 16px;
+}
+
+.Flash_Deals-Card_Box-Image {
+    position: relative;
+    color: var(--Primary-Text-Color);
+}
+
+.Flash_Deals-Card_Box-Text {
+    position: absolute;
+    bottom: 04px;
+    background-color: #FFB30E;
+    display: flex;
+    border-radius: 0px 20px 0px 10px;
+    padding: 0px 9px;
+}
+
+.Flash_Deals-Card_Box-Text_Left-P_Tag {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.Flash_Deals-Card_Box-Text_Right_P_Tag_1 {
+    font-size: 20px;
+}
+
+.Flash_Deals-Card_Box-Text_Right_P_Tag_2 {
+    font-size: 15px;
+}
+
+.Flash_Deals-Card_Box-Text_Right {
+    padding-top: 9px;
+}
+
+.Flash_Deals-Card_Box-Text-1 {
+    margin: 5px 0px;
+}
+
+.Flash_Deals-Card_Box-Text-2 {
+    background-color: #F1722833;
+    display: inline-block;
+    color: #F17228;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+
+/* -------- How_Does_It_Work - Section ---------------- */
+.How_Does_It_Work-Background {
+    background: linear-gradient(to bottom, #ffcf6724, #FDEDCA00);
+    padding: 50px;
+}
+
+.How_Does_It_Work-Header {
+    color: #F17228;
+    text-align: center;
+}
+
+.How_Does_It_Work-Card_Container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.How_Does_It_Work-Card_Container-Card {
+    width: 250px;
+    text-align: center;
+}
+
+.How_Does_It_Work-Card_Container-Card_P-Tag {
+    color: #9E9E9E;
+    margin: 5px 0px;
+}
+
+
+/* --------------- Popular-Item - Section --------------- */
+.Popular-Items {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.Popular-Items_Card-Container {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Popular-Items_Card {
+    text-align: left;
+}
+
+.Popular-Items_Card-Image {
+    height: auto;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.Popular-Items_Card h5 {
+    margin: 5px 0px;
+}
+
+.Popular-Items_Card p {
+    color: #FFB30E;
+}
+
+.Popular-Items_Card button {
+    background-color: #F17228;
+    color: white;
+    padding: 15px 67px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 20px 40px 0px #FA63233D;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/*  -----------Featured-Restaurants - Section ------------ */
+.Featured-Restaurants_Heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Featured-Restaurants_Card-Container {
+    margin: 0px 200px;
+}
+
+.Featured-Restaurants_Card-Container-row1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.Featured-Restaurants_Card1-img {
+    height: auto;
+    width: 15vw;
+    border-radius: 10px;
+}
+
+.Featured-Restaurants_Card1-img2 {
+    display: block;
+}
+
+.Featured-Restaurants_Card1-Divbox {
+    display: flex;
+    margin: 20px 10px 10px 0px;
+    align-items: center;
+}
+
+.Featured-Restaurants_Card1-Divbox_Bottom {
+    margin-left: 15px;
+}
+
+.Featured-Restaurants_Card1-Divbox_Bottom svg {
+    color: #FFB30E;
+}
+
+.Featured-Restaurants_Card1-Divbox_Bottom span {
+    color: #FFB30E;
+    font-weight: 600;
+}
+
+.Featured-Restaurants_Card1-opening-details {
+    background-color: #F1722833;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: #F17228;
+    margin: 10px 0px;
+}
+
+#Featured-Restaurants_Card1-opening-details-ID {
+    background-color: #79B93C33;
+    color: #79B93C;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}

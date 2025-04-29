@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodWagon - Food Delivery and Pickup</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="icon" type="image/png" href="./Assets/Favicon.png">
+</head>
+
+<body>
+    <main>
+        <header class="Nav-Bar">
+            <nav>
+                <div class="Nav-Container">
+                    <div class="Logo"><img src="./Assets/Logo.png" alt="Logo-Image"></div>
+                    <div class="Delivey-Address">
+                        <p class="Delivey-Address_P-Tag">Deliver to: <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                            </svg> <span class="Delivey-Address_Span">Current Location</span> Mohammadpur Bus Stand,
+                            Dhaka</p>
+                    </div>
+                    <div class="Search-And-LoginButton">
+                        <div class="Search-And-LoginButton_Container">
+                            <div class="Search_Container">
+                                <button onclick="handleSearch()"><img src="./Assets/Search.png" alt=""></button>
+                                <input type="text" id="searchInput" placeholder="Search Food">
+                            </div>
+                            <div class="Login-Button">
+                                <button><img src="./Assets/user.png" alt="Image">Login</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="Title-And_Order-Card">
+            <div class="Title-And_Order-Card_Background-Image">
+                <div class="Title-And_Order-Card_Container">
+                    <div class="Title-And_Order-Card_Sub_Container">
+                        <div class="Title">
+                            <h1 class="Title-H1-Tag">Are you starving?</h1>
+                            <p>Within a few clicks, find meals that are accessible near you</p>
+                        </div>
+                        <div class="Order-Card">
+                            <div class="Order-Card-Top">
+                                <button class="Delivery-Button">Delivery</button>
+                                <button class="Picup-Button">Pickup</button>
+                            </div>
+                            <hr>
+                            <div class="Order-Card-Bottom">
+                                <input type="text" id="searchInput" placeholder="Enter Your Address">
+                                <button onclick="handleSearch()"><img src="./Assests/Search.png" alt=""> Find
+                                    Food</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Food-Image">
+                        <img src="./Assets/Image Bowl.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Flash_Deals-Card">
+            <div class="Flash_Deals-Card_Container">
+                <div class="Flash_Deals-Card_Box">
+                    <div class="Flash_Deals-Card_Box-Image">
+                        <img src="./Assets/FS-Image1.png" alt="Image">
+                        <div class="Flash_Deals-Card_Box-Text">
+                            <div class="Flash_Deals-Card_Box-Text_Left">
+                                <p class="Flash_Deals-Card_Box-Text_Left-P_Tag">15</p>
+                            </div>
+                            <div class="Flash_Deals-Card_Box-Text_Right">
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_1">%</p>
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_2">Off</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Flash_Deals-Card_Box-Text-1">
+                        <h5>Greys Vage</h5>
+                    </div>
+                    <div class="Flash_Deals-Card_Box-Text-2">
+                        <h5>6 Days Remaining</h5>
+                    </div>
+                </div>
+
+                <div class="Flash_Deals-Card_Box">
+                    <div class="Flash_Deals-Card_Box-Image">
+                        <img src="./Assets/FS-Image2.png" alt="Image">
+                        <div class="Flash_Deals-Card_Box-Text">
+                            <div class="Flash_Deals-Card_Box-Text_Left">
+                                <p class="Flash_Deals-Card_Box-Text_Left-P_Tag">10</p>
+                            </div>
+                            <div class="Flash_Deals-Card_Box-Text_Right">
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_1">%</p>
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_2">Off</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Flash_Deals-Card_Box-Text-1">
+                        <h5>Greys Vage</h5>
+                    </div>
+                    <div class="Flash_Deals-Card_Box-Text-2">
+                        <h5>6 Days Remaining</h5>
+                    </div>
+                </div>
+
+                <div class="Flash_Deals-Card_Box">
+                    <div class="Flash_Deals-Card_Box-Image">
+                        <img src="./Assets/FS-Image3.png" alt="Image">
+                        <div class="Flash_Deals-Card_Box-Text">
+                            <div class="Flash_Deals-Card_Box-Text_Left">
+                                <p class="Flash_Deals-Card_Box-Text_Left-P_Tag">25</p>
+                            </div>
+                            <div class="Flash_Deals-Card_Box-Text_Right">
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_1">%</p>
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_2">Off</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Flash_Deals-Card_Box-Text-1">
+                        <h5>Greys Vage</h5>
+                    </div>
+                    <div class="Flash_Deals-Card_Box-Text-2">
+                        <h5>7 Days Remaining</h5>
+                    </div>
+                </div>
+
+                <div class="Flash_Deals-Card_Box">
+                    <div class="Flash_Deals-Card_Box-Image">
+                        <img src="./Assets/FS-Image4.png" alt="Image">
+                        <div class="Flash_Deals-Card_Box-Text">
+                            <div class="Flash_Deals-Card_Box-Text_Left">
+                                <p class="Flash_Deals-Card_Box-Text_Left-P_Tag">20</p>
+                            </div>
+                            <div class="Flash_Deals-Card_Box-Text_Right">
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_1">%</p>
+                                <p class="Flash_Deals-Card_Box-Text_Right_P_Tag_2">Off</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Flash_Deals-Card_Box-Text-1">
+                        <h5>Greys Vage</h5>
+                    </div>
+                    <div class="Flash_Deals-Card_Box-Text-2">
+                        <h5>8 Days Remaining</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="How_Does_It_Work">
+            <div class="How_Does_It_Work-Background">
+                <div class="How_Does_It_Work-Header">
+                    <h2 class="How_Does_It_Work-Header-H2-Tag">How does it work</h2>
+                </div>
+                <div class="How_Does_It_Work-Card_Container">
+                    <div class="How_Does_It_Work-Card_Container-Card">
+                        <img src="./Assets/Map Marker.png" alt="">
+                        <h5>Select location</h5>
+                        <p class="How_Does_It_Work-Card_Container-Card_P-Tag">Choose the location where your food will
+                            be delivered.</p>
+                    </div>
+
+                    <div class="How_Does_It_Work-Card_Container-Card">
+                        <img src="./Assets/Icons.png" alt="">
+                        <h5>Choose order</h5>
+                        <p class="How_Does_It_Work-Card_Container-Card_P-Tag">Check over hundreds of menus to pick your
+                            favorite food.</p>
+                    </div>
+
+                    <div class="How_Does_It_Work-Card_Container-Card">
+                        <img src="./Assets/Invoice.png" alt="">
+                        <h5>Pay advanced</h5>
+                        <p class="How_Does_It_Work-Card_Container-Card_P-Tag">It's quick, safe, and simple. Select
+                            several methods of payment.</p>
+                    </div>
+
+                    <div class="How_Does_It_Work-Card_Container-Card">
+                        <img src="./Assets/bonut.png" alt="">
+                        <h5>Enjoy meals</h5>
+                        <p class="How_Does_It_Work-Card_Container-Card_P-Tag">Food is made and delivered directly to
+                            your home.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Popular-Items">
+            <div class="Popular-Items_Heading">
+                <h2>Popular items</h2>
+            </div>
+
+            <div class="Popular-Items_Card-Container">
+
+                <div class="arrow-left">
+                    <img class="Popular-Items_Card-Arrow" src="./Assets/Arrow Left.png" alt="">
+                </div>
+                <div class="Popular-Items_Card">
+                    <img class="Popular-Items_Card-Image" src="./Assets/PIC-1.png" alt="">
+                    <h5 class="Popular-Items_Card-H5">Cheese Burger</h5>
+                    <p><img src="./Assets/location_Icon.png" alt=""> Burger Arena</p>
+                    <h5>$3.88</h5>
+                    <button>Order Now</button>
+                </div>
+                <div class="Popular-Items_Card">
+                    <img class="Popular-Items_Card-Image" src="./Assets/PIC-2.png" alt="">
+                    <h5 class="Popular-Items_Card-H5">Toffe’s Cake</h5>
+                    <p><img src="./Assets/location_Icon.png" alt=""> Top Sticks</p>
+                    <h5>$3.88</h5>
+                    <button>Order Now</button>
+                </div>
+                <div class="Popular-Items_Card">
+                    <img class="Popular-Items_Card-Image" src="./Assets/PIC-3.png" alt="">
+                    <h5 class="Popular-Items_Card-H5">Cheese Burger</h5>
+                    <p><img src="./Assets/location_Icon.png" alt=""> Burger Arena</p>
+                    <h5>$3.88</h5>
+                    <button>Order Now</button>
+                </div>
+                <div class="Popular-Items_Card">
+                    <img class="Popular-Items_Card-Image" src="./Assets/PIC-4.png" alt="">
+                    <h5 class="Popular-Items_Card-H5">Cheese Burger</h5>
+                    <p><img src="./Assets/location_Icon.png" alt=""> Burger Arena</p>
+                    <h5>$3.88</h5>
+                    <button>Order Now</button>
+                </div>
+                <div class="Popular-Items_Card">
+                    <img class="Popular-Items_Card-Image" src="./Assets/PIC-5.png" alt="">
+                    <h5 class="Popular-Items_Card-H5">Cheese Burger</h5>
+                    <p><img src="./Assets/location_Icon.png" alt=""> Burger Arena</p>
+                    <h5>$3.88</h5>
+                    <button>Order Now</button>
+                </div>
+                <div class="arrow-right">
+                    <img class="Popular-Items_Card-Arrow" src="./Assets/Arrow Right.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="Featured-Restaurants">
+            <div class="Featured-Restaurants_Heading">
+                <h2>Featured Restaurants</h2>
+            </div>
+            <div class="Featured-Restaurants_Card-Container">
+                <div class="Featured-Restaurants_Card-Container-row1">
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-1.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-1.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Foodworld</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>46</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details">
+                            <h5>Opens tomorrow</h5>
+                        </div>
+                    </div>
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-2.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-2.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Pizzahub</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>40</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details">
+                            <h5>Opens tomorrow</h5>
+                        </div>
+                    </div>
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-3.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-3.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Donuts hut</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>20</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details"
+                            id="Featured-Restaurants_Card1-opening-details-ID">
+                            <h5>Open Now</h5>
+                        </div>
+                    </div>
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-4.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-4.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Donuts hut</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>50</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details"
+                            id="Featured-Restaurants_Card1-opening-details-ID">
+                            <h5>Open Now</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="Featured-Restaurants_Card-Container-row1">
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-5.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-5.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Ruby Tuesday</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>26</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details"
+                            id="Featured-Restaurants_Card1-opening-details-ID">
+                            <h5>Open Now</h5>
+                        </div>
+                    </div>
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-6.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-6.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Kuakata Fried Chicken</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>53</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details"
+                            id="Featured-Restaurants_Card1-opening-details-ID">
+                            <h5>Open Now</h5>
+                        </div>
+                    </div>
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-7.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-7.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Red Square</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>53</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details"
+                            id="Featured-Restaurants_Card1-opening-details-ID">
+                            <h5>Open Now</h5>
+                        </div>
+                    </div>
+                    <div class="Featured-Restaurants_Card1">
+                        <img class="Featured-Restaurants_Card1-img" src="./Assets/FR-8.png" alt="">
+                        <div class="Featured-Restaurants_Card1-Divbox">
+                            <img class="Featured-Restaurants_Card1-img2" src="./Assets/FR2-8.png" alt="">
+                            <div class="Featured-Restaurants_Card1-Divbox_Bottom">
+                                <h5>Taco Bell</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg> <span>35</span>
+                            </div>
+                        </div>
+                        <div class="Featured-Restaurants_Card1-opening-details"
+                            id="Featured-Restaurants_Card1-opening-details-ID">
+                            <h5>Open Now</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <img src="./Assets/Button.png" alt="image">
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
